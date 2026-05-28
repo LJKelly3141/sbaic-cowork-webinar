@@ -6,6 +6,7 @@ Reproducible prep + delivery materials for the introductory Claude Cowork webina
 **Hosted by:** TBD
 **Date:** TBD 2026
 **Target runtime:** ~60 minutes (15 min concept · 25 min demo · 5 min takeaways · 10 min Q&A · 5 min open/close)
+**Repository:** <https://github.com/LJKelly3141/sbaic-cowork-webinar>
 
 ## What This Webinar Teaches
 
