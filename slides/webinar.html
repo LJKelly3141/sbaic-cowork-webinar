@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Dr. Logan Kelly · Small Business AI Center">
+  <title>Beyond the Chat Box</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.3.1/css/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.3.1/css/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.3.1/css/theme/white.css" id="theme">
+  <link rel="stylesheet" href="_quarto-shim.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https://unpkg.com/reveal.js@4.3.1/css/print/pdf.css' : 'https://unpkg.com/reveal.js@4.3.1/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="https://unpkg.com/reveal.js@4.3.1/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Beyond the Chat Box</h1>
+  <p class="subtitle">AI at Your Desk — Getting Started with Claude Cowork</p>
+  <p class="author">Dr. Logan Kelly · Small Business AI Center</p>
+  <p class="date">TBD 2026</p>
+</section>
+
+<section id="todays-plan" class="slide level2">
+<h2>Today’s Plan</h2>
+<ol type="1">
+<li><strong>Chat vs. Cowork</strong> — what changes when AI moves to your desk</li>
+<li><strong>Three Steps to Start</strong> — install, setup, pick a folder</li>
+<li><strong>Live Demo</strong> — point Cowork at a folder, then run a skill</li>
+<li><strong>What to Try This Week</strong></li>
+</ol>
+<aside class="notes">
+<p>~1 min. Frame the whole hour: this is mostly demo, you’ll leave knowing how to install and run your first Cowork session.</p>
+</aside>
+</section>
+<section id="chat-vs.-cowork" class="slide level2">
+<h2>Chat vs. Cowork</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 40%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Chat</strong></th>
+<th><strong>Cowork</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Where AI lives</strong></td>
+<td>A web tab</td>
+<td>A desktop app on your computer</td>
+</tr>
+<tr class="even">
+<td><strong>Context</strong></td>
+<td>One file at a time, re-uploaded</td>
+<td>A folder Cowork can read and write</td>
+</tr>
+<tr class="odd">
+<td><strong>Output</strong></td>
+<td>Text in a chat window</td>
+<td>Real files saved to your folder</td>
+</tr>
+<tr class="even">
+<td><strong>Repeating work</strong></td>
+<td>Re-type the prompt each time</td>
+<td>Skills, scheduled tasks, plugins</td>
+</tr>
+<tr class="odd">
+<td><strong>Privacy</strong></td>
+<td>Files travel to the cloud</td>
+<td>Runs in an isolated VM on your machine</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cowork is what you reach for when the work is multi-step, lives in files, or needs to repeat.</strong></p>
+<aside class="notes">
+<p>~3 min. This is THE slide. Spend time on it. The big shift: from “type a prompt about a file” to “AI works in the folder where the work already lives.”</p>
+</aside>
+</section>
+<section id="what-makes-cowork-different" class="slide level2">
+<h2>What Makes Cowork Different</h2>
+<ul>
+<li><strong>Reads your folders</strong> — no more copy-paste, no more re-upload</li>
+<li><strong>Writes real files</strong> — <code>.docx</code>, <code>.xlsx</code>, <code>.pdf</code> you can open and edit</li>
+<li><strong>Runs skills</strong> — reusable mini-programs for repeating workflows</li>
+<li><strong>Uses MCP connectors</strong> — Slack, Gmail, QuickBooks, Calendar, and more</li>
+<li><strong>Schedules tasks</strong> — daily briefings or weekly reports while you sleep</li>
+<li><strong>Stays local</strong> — files don’t leave your machine for training</li>
+</ul>
+<div class="aside">
+<p>Source: Anthropic, <em>Get started with Claude Cowork</em> (claude.com).</p>
+</div>
+<aside class="notes">
+<p>~3 min. Each point is a feature small biz owners actually want. Don’t list — pause on each.</p>
+</aside>
+</section>
+<section id="three-steps-to-start" class="slide level2">
+<h2>Three Steps to Start</h2>
+<ol type="1">
+<li><strong>Install</strong> Claude Desktop</li>
+<li><strong>Run</strong> <code>/setup-cowork</code> in your first session</li>
+<li><strong>Pick a folder</strong> and describe what you want</li>
+</ol>
+<div class="aside">
+<p>Source: Anthropic, <em>Get started in Claude Cowork in three steps</em> (claude.com).</p>
+</div>
+<aside class="notes">
+<p>~1 min. Roadmap for the next three slides.</p>
+</aside>
+</section>
+<section id="step-1-install-claude-desktop" class="slide level2">
+<h2>Step 1 — Install Claude Desktop</h2>
+<p><strong>Download:</strong> <code>claude.com/download</code> — pick macOS or Windows</p>
+<table>
+<thead>
+<tr class="header">
+<th>Requirement</th>
+<th>What you need</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Mac</strong></td>
+<td>Apple Silicon (M1 or newer) for Cowork</td>
+</tr>
+<tr class="even">
+<td><strong>Windows</strong></td>
+<td>Pro / Enterprise / Education (Hyper-V required); x64 or ARM64</td>
+</tr>
+<tr class="odd">
+<td><strong>Plan</strong></td>
+<td>Pro ($20/mo), Max, Team, or Enterprise — not free tier</td>
+</tr>
+<tr class="even">
+<td><strong>Install</strong></td>
+<td>Admin rights on first install</td>
+</tr>
+</tbody>
+</table>
+<div class="callout-warning" data-appearance="simple">
+<p><strong>Windows Home users:</strong> Cowork won’t run — Hyper-V isn’t available. Upgrade to Pro, or use a Mac.</p>
+</div>
+<aside class="notes">
+<p>~2 min. The plan + Hyper-V requirements catch people off guard. Be explicit.</p>
+</aside>
+</section>
+<section id="step-2-run-setup-cowork" class="slide level2">
+<h2>Step 2 — Run <code>/setup-cowork</code></h2>
+<p>In your first Cowork session, <strong>type <code>/setup-cowork</code></strong> and press enter.</p>
+<p>Guided setup walks you through:</p>
+<ul>
+<li><strong>Pick your role</strong> (small biz owner, lawyer, marketer, etc.)</li>
+<li><strong>Install a plugin</strong> matched to that role</li>
+<li><strong>Connect your tools</strong> — Slack, Google or Microsoft 365, QuickBooks, etc.</li>
+<li><strong>Try a skill</strong> — your first repeatable workflow</li>
+</ul>
+<aside class="notes">
+<p>~2 min. The plugin/role matching is the magic — Cowork loads workflows already designed for what you do.</p>
+</aside>
+</section>
+<section id="step-3-pick-a-folder" class="slide level2">
+<h2>Step 3 — Pick a Folder</h2>
+<p>Click <strong>“Work in a folder”</strong> in the chat bar.</p>
+<ul>
+<li>Cowork reads context from that folder</li>
+<li>Cowork saves finished work back to that folder</li>
+<li>You can change folders any time — it’s just a permission scope</li>
+</ul>
+<p><strong>Tip:</strong> Make a fresh folder for each project. Cowork sees everything in it.</p>
+<aside class="notes">
+<p>~2 min. The folder = the scope of trust. Pick deliberately. Show this on screen if possible.</p>
+</aside>
+</section>
+<section id="privacy-trust" class="slide level2">
+<h2>Privacy &amp; Trust</h2>
+<ul>
+<li>Cowork runs in an <strong>isolated virtual machine</strong> on your computer</li>
+<li>Files never leave your machine for training</li>
+<li>Network access is allowlisted</li>
+<li>You see what Cowork plans before it acts — approve, edit, or cancel each step</li>
+</ul>
+<div class="aside">
+<p>Source: Anthropic, <em>Claude Cowork</em> product page (anthropic.com).</p>
+</div>
+<aside class="notes">
+<p>~2 min. Small business owners worry about this. Address it head-on.</p>
+</aside>
+</section>
+<section>
+<section id="live-demo" class="title-slide slide level1 section-header">
+<h1 class="section-header">Live Demo</h1>
+
+</section>
+<section id="demo-1-whats-in-my-folder" class="slide level2">
+<h2>Demo 1 — What’s In My Folder?</h2>
+<p><strong>Point Cowork at a folder of business docs</strong></p>
+<ul>
+<li>A sample folder with invoices, an email thread, a memo, a spreadsheet</li>
+<li>Ask: <em>“Read this folder. What’s here, and what needs my attention this week?”</em></li>
+<li>Watch Cowork: open files → summarize → propose a punch list</li>
+</ul>
+<aside class="notes">
+<p>~12 min. See demo/prompts.md. Show the folder picker, paste the prompt, narrate as Cowork plans and works.</p>
+</aside>
+</section>
+<section id="demo-2-saving-work-as-a-skill" class="slide level2">
+<h2>Demo 2 — Saving Work as a Skill</h2>
+<p><strong>A reusable mini-workflow you trigger by name</strong></p>
+<ul>
+<li>Take the prompt from Demo 1 → save it as a “Monday Briefing” skill</li>
+<li>Re-run it next week with two words instead of two paragraphs</li>
+<li>Skills can also be installed from a marketplace — pre-built by Anthropic or others</li>
+</ul>
+<aside class="notes">
+<p>~13 min. Show the /save-as-skill flow or load a pre-built skill. The “Aha” moment: this is how the repetition tax goes away.</p>
+</aside>
+</section></section>
+<section>
+<section id="your-move" class="title-slide slide level1 section-header">
+<h1 class="section-header">Your Move</h1>
+
+</section>
+<section id="three-things-to-try-this-week" class="slide level2">
+<h2>Three Things to Try This Week</h2>
+<ol type="1">
+<li><p><strong>Install Claude Desktop</strong> and run <code>/setup-cowork</code> once Even if you don’t use it daily — the install itself takes 10 minutes.</p></li>
+<li><p><strong>Make a “Cowork sandbox” folder</strong> Pick a low-stakes folder (last quarter’s invoices, an old project) and let Cowork read it. Get a feel for what it sees.</p></li>
+<li><p><strong>Save one prompt you re-type as a skill</strong> The first time you find yourself pasting the same instructions twice, stop and turn it into a skill.</p></li>
+</ol>
+<aside class="notes">
+<p>~2 min.</p>
+</aside>
+</section>
+<section id="resources-contact" class="slide level2">
+<h2>Resources &amp; Contact</h2>
+<p><strong>Get started:</strong> <a href="https://claude.com/download">claude.com/download</a> · <a href="https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork">support.claude.com — Get started with Claude Cowork</a></p>
+<p><strong>Slides + handout:</strong> TODO repo URL</p>
+</section>
+<section class="slide level2">
+
+<p><strong>Logan Kelly, Ph.D.</strong></p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Codirector, Small Business AI Center</td>
+<td>Professor of Economics</td>
+</tr>
+<tr class="even">
+<td>Universities of Wisconsin · OBE</td>
+<td>UW–River Falls · SBE</td>
+</tr>
+<tr class="odd">
+<td>logan.kelly@business.wisconsin.edu</td>
+<td>logan.kelly@uwrf.edu</td>
+</tr>
+<tr class="even">
+<td>715-425-3335</td>
+<td>715-425-3335</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>~2 min.</p>
+</aside>
+</section>
+<section id="qa" class="slide level2 center">
+<h2 class="center">Q&amp;A</h2>
+<p>Thank you!</p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@4.3.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Transition style
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+        height: 720,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://unpkg.com/reveal.js@4.3.1/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://unpkg.com/reveal.js@4.3.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://unpkg.com/reveal.js@4.3.1/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

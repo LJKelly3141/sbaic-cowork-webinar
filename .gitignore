@@ -1,0 +1,22 @@
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Quarto render output
+slides/webinar_files/
+handout/handout_files/
+**/*_files/
+
+# OS
+.DS_Store
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# Large original dataset (sample is included)
+data-pipeline/invoices_with_acct_and_cases_sample.csv
+
+# Superpowers internal docs
+docs/superpowers/

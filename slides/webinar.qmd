@@ -1,0 +1,231 @@
+---
+title: "Beyond the Chat Box"
+subtitle: "AI at Your Desk — Getting Started with Claude Cowork"
+author: "Dr. Logan Kelly · Small Business AI Center"
+institute: "Small Business AI Center"
+date: "TBD 2026"
+format:
+  revealjs:
+    theme: [white, custom.scss]
+    slide-number: true
+    footer: "Dr. Logan Kelly | Small Business AI Center"
+    width: 1280
+    height: 720
+    embed-resources: true
+---
+
+## Today's Plan
+
+1. **Chat vs. Cowork** — what changes when AI moves to your desk
+2. **Three Steps to Start** — install, setup, pick a folder
+3. **Live Demo** — point Cowork at a folder, then run a skill
+4. **What to Try This Week**
+
+::: {.notes}
+~1 min. Frame the whole hour: this is mostly demo, you'll leave knowing how to install and run your first Cowork session.
+:::
+
+---
+
+## Chat vs. Cowork
+
+| | **Chat** | **Cowork** |
+|---|----------|------------|
+| **Where AI lives** | A web tab | A desktop app on your computer |
+| **Context** | One file at a time, re-uploaded | A folder Cowork can read and write |
+| **Output** | Text in a chat window | Real files saved to your folder |
+| **Repeating work** | Re-type the prompt each time | Skills, scheduled tasks, plugins |
+| **Privacy** | Files travel to the cloud | Runs in an isolated VM on your machine |
+
+**Cowork is what you reach for when the work is multi-step, lives in files, or needs to repeat.**
+
+::: {.notes}
+~3 min. This is THE slide. Spend time on it. The big shift: from "type a prompt about a file" to "AI works in the folder where the work already lives."
+:::
+
+---
+
+## What Makes Cowork Different
+
+- **Reads your folders** — no more copy-paste, no more re-upload
+- **Writes real files** — `.docx`, `.xlsx`, `.pdf` you can open and edit
+- **Runs skills** — reusable mini-programs for repeating workflows
+- **Uses MCP connectors** — Slack, Gmail, QuickBooks, Calendar, and more
+- **Schedules tasks** — daily briefings or weekly reports while you sleep
+- **Stays local** — files don't leave your machine for training
+
+::: {.aside}
+Source: Anthropic, *Get started with Claude Cowork* (claude.com).
+:::
+
+::: {.notes}
+~3 min. Each point is a feature small biz owners actually want. Don't list — pause on each.
+:::
+
+---
+
+## Three Steps to Start
+
+1. **Install** Claude Desktop
+2. **Run** `/setup-cowork` in your first session
+3. **Pick a folder** and describe what you want
+
+::: {.aside}
+Source: Anthropic, *Get started in Claude Cowork in three steps* (claude.com).
+:::
+
+::: {.notes}
+~1 min. Roadmap for the next three slides.
+:::
+
+---
+
+## Step 1 — Install Claude Desktop
+
+**Download:** `claude.com/download` — pick macOS or Windows
+
+| Requirement | What you need |
+|-------------|---------------|
+| **Mac** | Apple Silicon (M1 or newer) for Cowork |
+| **Windows** | Pro / Enterprise / Education (Hyper-V required); x64 or ARM64 |
+| **Plan** | Pro ($20/mo), Max, Team, or Enterprise — not free tier |
+| **Install** | Admin rights on first install |
+
+::: {.callout-warning appearance="simple"}
+**Windows Home users:** Cowork won't run — Hyper-V isn't available. Upgrade to Pro, or use a Mac.
+:::
+
+::: {.notes}
+~2 min. The plan + Hyper-V requirements catch people off guard. Be explicit.
+:::
+
+---
+
+## Step 2 — Run `/setup-cowork`
+
+In your first Cowork session, **type `/setup-cowork`** and press enter.
+
+Guided setup walks you through:
+
+- **Pick your role** (small biz owner, lawyer, marketer, etc.)
+- **Install a plugin** matched to that role
+- **Connect your tools** — Slack, Google or Microsoft 365, QuickBooks, etc.
+- **Try a skill** — your first repeatable workflow
+
+::: {.notes}
+~2 min. The plugin/role matching is the magic — Cowork loads workflows already designed for what you do.
+:::
+
+---
+
+## Step 3 — Pick a Folder
+
+Click **"Work in a folder"** in the chat bar.
+
+- Cowork reads context from that folder
+- Cowork saves finished work back to that folder
+- You can change folders any time — it's just a permission scope
+
+**Tip:** Make a fresh folder for each project. Cowork sees everything in it.
+
+::: {.notes}
+~2 min. The folder = the scope of trust. Pick deliberately. Show this on screen if possible.
+:::
+
+---
+
+## Privacy & Trust
+
+- Cowork runs in an **isolated virtual machine** on your computer
+- Files never leave your machine for training
+- Network access is allowlisted
+- You see what Cowork plans before it acts — approve, edit, or cancel each step
+
+::: {.aside}
+Source: Anthropic, *Claude Cowork* product page (anthropic.com).
+:::
+
+::: {.notes}
+~2 min. Small business owners worry about this. Address it head-on.
+:::
+
+# Live Demo {.section-header}
+
+---
+
+## Demo 1 — What's In My Folder?
+
+**Point Cowork at a folder of business docs**
+
+- A sample folder with invoices, an email thread, a memo, a spreadsheet
+- Ask: *"Read this folder. What's here, and what needs my attention this week?"*
+- Watch Cowork: open files → summarize → propose a punch list
+
+::: {.notes}
+~12 min. See demo/prompts.md. Show the folder picker, paste the prompt, narrate as Cowork plans and works.
+:::
+
+---
+
+## Demo 2 — Saving Work as a Skill
+
+**A reusable mini-workflow you trigger by name**
+
+- Take the prompt from Demo 1 → save it as a "Monday Briefing" skill
+- Re-run it next week with two words instead of two paragraphs
+- Skills can also be installed from a marketplace — pre-built by Anthropic or others
+
+::: {.notes}
+~13 min. Show the /save-as-skill flow or load a pre-built skill. The "Aha" moment: this is how the repetition tax goes away.
+:::
+
+# Your Move {.section-header}
+
+---
+
+## Three Things to Try This Week
+
+1. **Install Claude Desktop** and run `/setup-cowork` once
+   Even if you don't use it daily — the install itself takes 10 minutes.
+
+2. **Make a "Cowork sandbox" folder**
+   Pick a low-stakes folder (last quarter's invoices, an old project) and let
+   Cowork read it. Get a feel for what it sees.
+
+3. **Save one prompt you re-type as a skill**
+   The first time you find yourself pasting the same instructions twice,
+   stop and turn it into a skill.
+
+::: {.notes}
+~2 min.
+:::
+
+---
+
+## Resources & Contact
+
+**Get started:** [claude.com/download](https://claude.com/download) ·
+[support.claude.com — Get started with Claude Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)
+
+**Slides + handout:** TODO repo URL
+
+---
+
+**Logan Kelly, Ph.D.**
+
+| | |
+|---|---|
+| Codirector, Small Business AI Center | Professor of Economics |
+| Universities of Wisconsin · OBE | UW–River Falls · SBE |
+| logan.kelly@business.wisconsin.edu | logan.kelly@uwrf.edu |
+| 715-425-3335 | 715-425-3335 |
+
+::: {.notes}
+~2 min.
+:::
+
+---
+
+## Q&A {.center}
+
+Thank you!

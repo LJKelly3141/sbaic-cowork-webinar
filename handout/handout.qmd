@@ -1,0 +1,209 @@
+---
+title: "Beyond the Chat Box: AI at Your Desk"
+subtitle: "Audience Notes — Getting Started with Claude Cowork"
+author: "Dr. Logan Kelly | Small Business AI Center"
+date: "TBD 2026"
+format:
+  pdf:
+    documentclass: article
+    geometry:
+      - margin=0.75in
+    fontsize: 10pt
+    include-in-header:
+      text: |
+        \usepackage{booktabs}
+        \usepackage{xcolor}
+        \definecolor{uwrfred}{HTML}{BE0F34}
+        \definecolor{uwrfblue}{HTML}{2EC7FF}
+        \definecolor{promptbg}{HTML}{F5F5F5}
+        \usepackage{enumitem}
+        \setlist{nosep, leftmargin=1.2em}
+        \usepackage{titlesec}
+        \titleformat{\section}{\large\bfseries\color{uwrfred}}{}{0em}{}[\vspace{-0.3em}\rule{\textwidth}{0.5pt}]
+        \titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+        \titleformat{\subsubsection}{\small\bfseries\itshape}{}{0em}{}
+        \titlespacing*{\section}{0pt}{1.2em}{0.4em}
+        \titlespacing*{\subsection}{0pt}{0.8em}{0.2em}
+        \titlespacing*{\subsubsection}{0pt}{0.5em}{0.2em}
+        \usepackage{tcolorbox}
+        \tcbuselibrary{breakable}
+        \newtcolorbox{promptbox}[1][]{
+          colback=promptbg,
+          colframe=uwrfred,
+          fonttitle=\small\bfseries,
+          boxrule=0.5pt,
+          arc=2pt,
+          left=6pt, right=6pt, top=4pt, bottom=4pt,
+          breakable,
+          title=#1
+        }
+        \newtcolorbox{followupbox}[1][]{
+          colback=white,
+          colframe=uwrfblue,
+          fonttitle=\small\bfseries,
+          boxrule=0.5pt,
+          arc=2pt,
+          left=6pt, right=6pt, top=4pt, bottom=4pt,
+          breakable,
+          title=#1
+        }
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \fancyfoot[C]{\small\color{gray} Small Business AI Center}
+        \fancyfoot[R]{\small\color{gray}\thepage}
+        \renewcommand{\headrulewidth}{0pt}
+---
+
+\begin{center}
+{\small Small Business AI Center}
+\end{center}
+
+\section{What is Claude Cowork?}
+
+Cowork is Anthropic's desktop AI mode where Claude works \emph{with the files
+on your computer} instead of inside a chat tab. You point it at a folder,
+describe a result, and Cowork plans, executes, and saves real files back to
+that folder.
+
+\begin{itemize}
+\item \textbf{Reads your folders} --- no more copy-paste, no more re-upload
+\item \textbf{Writes real files} --- \texttt{.docx}, \texttt{.xlsx}, \texttt{.pdf} you can open and edit
+\item \textbf{Runs skills} --- reusable mini-programs for repeating workflows
+\item \textbf{Uses connectors} --- Slack, Gmail, QuickBooks, Calendar, more
+\item \textbf{Schedules tasks} --- daily briefings or weekly reports automatically
+\item \textbf{Stays local} --- runs in an isolated VM; files don't leave your machine
+\end{itemize}
+
+\subsection{Cowork vs. Chat --- when to use which}
+
+\begin{tabular}{@{}p{0.45\textwidth}p{0.45\textwidth}@{}}
+\toprule
+\textbf{Chat} & \textbf{Cowork} \\
+\midrule
+One file at a time, re-uploaded & A folder Cowork can read and write \\
+Text in a chat window & Real files saved back \\
+Re-type the prompt each time & Skills, scheduled tasks, plugins \\
+Files travel to the cloud & Runs in an isolated VM locally \\
+Good for quick Q\&A & Good for multi-step work in your files \\
+\bottomrule
+\end{tabular}
+
+\section{Three Steps to Start}
+
+\subsection{Step 1 --- Install Claude Desktop}
+
+\textbf{Download:} \texttt{claude.com/download} --- pick macOS or Windows.
+
+\begin{itemize}
+\item \textbf{Mac:} Apple Silicon (M1 or newer) required for Cowork
+\item \textbf{Windows:} Pro / Enterprise / Education (Hyper-V required); not Home
+\item \textbf{Plan:} Pro (\$20/mo), Max, Team, or Enterprise --- not free tier
+\item \textbf{Install:} Admin rights needed on first install
+\end{itemize}
+
+\subsection{Step 2 --- Run /setup-cowork}
+
+In your first Cowork session, type \texttt{/setup-cowork} and press enter.
+Guided setup walks you through:
+
+\begin{itemize}
+\item Pick your role (small biz owner, lawyer, marketer, etc.)
+\item Install a plugin matched to that role
+\item Connect your tools --- Slack, Google or Microsoft 365, QuickBooks, etc.
+\item Try a skill --- your first repeatable workflow
+\end{itemize}
+
+\subsection{Step 3 --- Pick a Folder}
+
+Click \textbf{``Work in a folder''} in the chat bar. Cowork reads context from
+that folder and saves finished work back to it. You can change folders any
+time --- it's just a permission scope.
+
+\textbf{Tip:} make a fresh folder for each project. Cowork sees everything in it.
+
+\section{Demo 1: What's in My Folder?}
+
+\textbf{Setup:} point Cowork at a folder of business documents.
+
+\begin{promptbox}[Prompt]
+Read everything in this folder. Then tell me:
+
+\begin{enumerate}
+\item What's here --- a short index of files with one-line descriptions
+\item What needs my attention this week --- anything time-sensitive,
+      decisions owed, or follow-ups overdue
+\item What's not here that probably should be --- gaps you'd ask me about
+\end{enumerate}
+
+Don't write any files yet --- just report back.
+\end{promptbox}
+
+\begin{followupbox}[Follow-up (if useful)]
+For the items you flagged as needing attention this week, draft a short
+reply or response for each one. Save the drafts as a single Word document
+in this folder called \texttt{Drafts\_For\_Review.docx}.
+\end{followupbox}
+
+\section{Demo 2: Saving Work as a Skill}
+
+\textbf{Setup:} after Demo 1, in the same Cowork session.
+
+\begin{promptbox}[Prompt]
+Save what we just did as a skill called ``Monday Briefing.'' It should:
+
+\begin{itemize}
+\item Read the current working folder
+\item Produce the same 3-part report
+\item Run once per week --- set it up as a Monday morning scheduled task
+\end{itemize}
+
+Tell me what you've saved and how I trigger it next week.
+\end{promptbox}
+
+\begin{followupbox}[Follow-up (if useful)]
+What other workflows in my week look like good candidates to turn into
+skills? Don't build them --- just suggest 3 or 4 based on what you've seen.
+\end{followupbox}
+
+\section{Three Things to Try This Week}
+
+\begin{enumerate}
+\item \textbf{Install Claude Desktop} and run \texttt{/setup-cowork} once.
+      Even if you don't use it daily --- the install itself takes ~10 minutes.
+\item \textbf{Make a ``Cowork sandbox'' folder.} Pick a low-stakes folder
+      (last quarter's invoices, an old project) and let Cowork read it. Get
+      a feel for what it sees.
+\item \textbf{Save one prompt you re-type as a skill.} The first time you
+      find yourself pasting the same instructions twice, stop and turn it
+      into a skill.
+\end{enumerate}
+
+\section{Privacy \& Trust}
+
+\begin{itemize}
+\item Cowork runs in an \textbf{isolated virtual machine} on your computer
+\item Files never leave your machine for training
+\item Network access is allowlisted
+\item You see what Cowork plans before it acts --- approve, edit, or cancel each step
+\end{itemize}
+
+\section{Contact}
+
+\begin{tabular}{@{}ll@{}}
+\textbf{Logan Kelly, Ph.D.} & \\[0.3em]
+\textit{Codirector, Small Business AI Center} & \textit{Professor of Economics} \\
+Universities of Wisconsin & School of Business and Economics \\
+Office of Business \& Entrepreneurship & University of Wisconsin--River Falls \\
+Phone: 715-425-3335 & Phone: 715-425-3335 \\
+Email: logan.kelly@business.wisconsin.edu & Email: logan.kelly@uwrf.edu \\
+\end{tabular}
+
+\section{Resources}
+
+\begin{itemize}
+\item \textbf{Download:} \texttt{claude.com/download}
+\item \textbf{Get started guide:} \texttt{support.claude.com} $\rightarrow$ ``Get started with Claude Cowork''
+\item \textbf{Three-step intro:} \texttt{claude.com/resources/tutorials/get-started-in-claude-cowork-in-three-steps}
+\item \textbf{Small business tutorial:} \texttt{claude.com/resources/tutorials/using-claude-for-your-small-business}
+\end{itemize}

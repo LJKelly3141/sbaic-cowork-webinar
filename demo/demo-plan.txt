@@ -1,0 +1,100 @@
+================================================================================
+DEMO PLAN — Beyond the Chat Box: AI at Your Desk
+Target: ~25 min total inside a ~60 min webinar
+================================================================================
+
+PRE-DEMO SETUP (do before going live)
+================================================================================
+
+  - Open Claude Desktop in Cowork mode
+  - Have a sandbox folder ready at demo/sample-business-folder/ with
+    3-5 plausible files (invoice, email .txt, memo, spreadsheet)
+  - Start a fresh Cowork session (no prior history)
+
+
+DEMO 1: WHAT'S IN MY FOLDER?  (~12 min)
+================================================================================
+
+Folder: demo/sample-business-folder/
+
+--------------------------------------------------------------------------------
+THE PROMPT
+--------------------------------------------------------------------------------
+
+Read everything in this folder. Then tell me:
+
+1. What's here -- a short index of files with one-line descriptions
+2. What needs my attention this week -- anything time-sensitive,
+   decisions owed, or follow-ups overdue
+3. What's not here that probably should be -- gaps you'd ask me about
+
+Don't write any files yet -- just report back.
+
+--- NARRATE AS COWORK WORKS ---
+
+  - "Notice Cowork is opening each file itself -- I didn't have to upload them."
+  - "It's planning a sequence of actions first. That's the agentic part."
+  - When the punch list appears: "This came from reading actual files, not
+    guessing from a description."
+
+--- FOLLOW-UP (if time) ---
+
+For the items you flagged as needing attention this week, draft a short
+reply or response for each one. Save the drafts as a single Word document
+in this folder called Drafts_For_Review.docx.
+
+
+DEMO 2: SAVING WORK AS A SKILL  (~13 min)
+================================================================================
+
+Run in the same Cowork session.
+
+--------------------------------------------------------------------------------
+OPTION A -- SAVE THE DEMO 1 PROMPT AS A CUSTOM SKILL
+--------------------------------------------------------------------------------
+
+Save what we just did as a skill called "Monday Briefing." It should:
+
+  - Read the current working folder
+  - Produce the same 3-part report
+  - Run once per week -- set it up as a Monday morning scheduled task
+
+Tell me what you've saved and how I trigger it next week.
+
+Then open a fresh chat and type /monday-briefing to demonstrate.
+
+--------------------------------------------------------------------------------
+OPTION B -- USE A PRE-BUILT SKILL FROM THE MARKETPLACE
+--------------------------------------------------------------------------------
+
+Show me what skills I have available right now. Pick one that's relevant
+for a small business owner -- maybe inbox triage or a weekly briefing --
+and walk me through using it on this folder.
+
+--- NARRATE ---
+
+  - "The saved skill turns 200 words of instruction into one command.
+    That's the repetition tax going away."
+  - "Cowork can also install skills from a marketplace -- Anthropic and
+    other publishers ship skills you can use right away."
+  - "Scheduled tasks mean Cowork runs while you're not at your desk."
+
+--- FOLLOW-UP ---
+
+What other workflows in my week look like good candidates to turn into
+skills? Don't build them -- just suggest 3 or 4 based on what you've seen.
+
+
+================================================================================
+PRESENTER NOTES
+================================================================================
+
+- Show the folder picker on screen when starting -- the "Work in a folder"
+  visual makes the whole concept click.
+- Don't rush past the planning step. When Cowork shows its plan, read it
+  aloud -- that's the "auditable" promise.
+- If Cowork asks for approval to write a file, narrate that out loud:
+  "That's the safety guardrail."
+- If something fails live, use it: "That's actually a common scenario."
+- If behind time: skip Demo 1 follow-up and the "what other workflows" Q.
+  The save-as-skill moment is the lesson -- protect it.
